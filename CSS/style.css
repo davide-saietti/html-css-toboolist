@@ -1,35 +1,35 @@
 /* reset */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: whitesmoke;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+body {
+  background-color: whitesmoke;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* header */
 
-header{
-    background-color: white;
-    padding: 0;
+header {
+  background-color: white;
+  padding: 0;
 }
 
-.logo{
-    display: inline-flex;
-    padding: 14px;
+.logo {
+  display: inline-flex;
+  padding: 14px;
 }
-.logo img{
-    width: 50px;
-    height: 50px;
+.logo img {
+  width: 50px;
+  height: 50px;
 }
 
-.logo h1{
-    font-size: 40px;
-    padding-left: 8px;
-    font-weight:700;
+.logo h1 {
+  font-size: 40px;
+  padding-left: 8px;
+  font-weight: 700;
 }
 
 /* main */
@@ -56,7 +56,7 @@ header{
 }
 
 .button-one {
-  background-color:#47ADF1;
+  background-color: #47adf1;
   color: white;
 }
 
@@ -67,25 +67,108 @@ header{
 
 /* page management */
 
-.page-content{
-    border-top: 1px solid rgba(128, 128, 128, 0.683);
-    padding:70px
+.page-content {
+  border-top: 1px solid rgba(128, 128, 128, 0.683);
+  padding: 70px;
 }
 
 /* tag section */
 
-.tag-section{
-  margin-top: 30px;
+.tag-section {
+  margin-top: 40px;
 }
 
 .tag-section h2 {
   font-size: 20px;
   margin-bottom: 12px;
+  margin-left: 40px;
   position: relative;
 }
 
 .tag-section h2::before {
   content: "▾";
-  font-size: 18px;
-  margin-right: 6px;
+  font-size: 28px;
+  top: -5px;
+  left: -28px;
+  position: absolute;
+}
+
+/* tag section list */
+
+.tag-section ul {
+  list-style: none;
+  margin-left: 20px;
+}
+
+.tag-section ul li {
+  margin: 20px;
+  padding-left: 2px;
+  position: relative;
+  font-size: 16px;
+}
+
+.check::before {
+  content: "✔";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 50%;
+  border: 2px solid green;
+  color: green;
+  position: relative;
+  margin-right: 4px;
+}
+.checkno::before {
+  content: "✖";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 50%;
+  border: 2px solid red;
+  color: red;
+  position: relative;
+  margin-right: 4px;
+}
+
+/* tags */
+.tag {
+  display: inline-block;
+  font-size: 12px;
+  padding: 4px 12px;
+  border-radius: 8px;
+  color: white;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+.editorial {
+  background-color: #47adf1;
+}
+
+.Q1-goals {
+  background-color: rgb(143, 71, 179);
+}
+
+.recruiting {
+  background-color: mediumseagreen;
+}
+
+.mobile {
+  background-color: coral;
+}
+
+.website {
+  background-color: hotpink;
+}
+
+.sales {
+  background-color: olive;
 }
