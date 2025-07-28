@@ -32,3 +32,60 @@ header{
     font-weight:700;
 }
 
+/* main */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px 0 0 0;
+}
+
+/* BUTTONS */
+.buttons {
+  margin: 30px 30px 40px;
+}
+
+.button {
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.button-one {
+  background-color:#47ADF1;
+  color: white;
+}
+
+.button-two {
+  background-color: whitesmoke;
+  color: lightgray;
+}
+
+/* page management */
+
+.page-content{
+    border-top: 1px solid rgba(128, 128, 128, 0.683);
+    padding:70px
+}
+
+/* tag section */
+
+.tag-section{
+  margin-top: 30px;
+}
+
+.tag-section h2 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.tag-section h2::before {
+  content: "▾";
+  font-size: 18px;
+  margin-right: 6px;
+}
